@@ -15,5 +15,5 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/solver_lib)
 
 target_link_libraries(formatter_ex PUBLIC formatter)
 
-add_subdirectory(solver_application)
 add_subdirectory(hello_world_application)
+add_subdirectory(solver_application)
