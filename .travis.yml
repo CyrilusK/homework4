@@ -9,25 +9,25 @@ script:
 - cmake --build _build
 #- cmake --build _build --target install
 
-addons:
-  apt:
-    sources:
-    - george-edison55-precise-backports
-    packages:
-    - cmake
-    - cmake-data
-
-matrix:
-  include:
-  - os: linux
-    addons:
-      apt:
-        sources:
-        - llvm-toolchain-trusty-5.0
-        packages:
-        - clang-5.0
-    env:
-    - MATRIX_EVAL="CC=clang-5.0 &&CXX=clang++-5.0"
-
-before_install:
-- eval "${MATRIX_EVAL}"
+#addons:
+#  apt:
+#    sources:
+#    - george-edison55-precise-backports
+#    packages:
+#    - cmake
+#    - cmake-data
+#
+#matrix:
+#  include:
+#  - os: linux
+#    addons:
+#      apt:
+#        sources:
+#        - llvm-toolchain-trusty-5.0
+#        packages:
+#        - clang-5.0
+#    env:
+#    - MATRIX_EVAL="CC=clang-5.0 &&CXX=clang++-5.0"
+#
+#before_install:
+#- eval "${MATRIX_EVAL}"
