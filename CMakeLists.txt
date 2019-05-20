@@ -17,3 +17,6 @@ target_link_libraries(formatter_ex PUBLIC formatter)
 
 add_subdirectory(hello_world_application)
 add_subdirectory(solver_application)
+add_executable(equation ${CMAKE_CURRENT_SOURCE_DIR}/solver_application/equation.cpp)
+target_link_libraries(equation formatter_ex)
+target_link_libraries(equation solver_lib)
