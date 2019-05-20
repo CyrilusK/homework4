@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 #include "formatter_ex.h"
 #include "solver.h"
